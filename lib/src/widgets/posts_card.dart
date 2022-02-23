@@ -26,13 +26,6 @@ class _PostsCardState extends State<PostsCard> {
         Stack(
           children: <Widget>[
             Hero(tag: 'hero${widget.post!.id}', child: hawalImage(widget.post!)),
-            Positioned(
-              bottom: 2.0,
-              left: 5.0,
-              child: new ButtonTheme(
-                child: hawalBtnBar(),
-              ),
-            ),
           ],
         ),
         new Padding(

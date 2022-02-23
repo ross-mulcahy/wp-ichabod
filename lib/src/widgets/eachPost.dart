@@ -29,11 +29,6 @@ class HawalnirPost extends StatelessWidget {
                   Stack(
                     children: <Widget>[
                       Hero(tag: 'hero${post!.id}', child: hawalImage(post!)),
-                      Positioned(
-                        bottom: 0.0,
-                        left: 0.0,
-                        child: hawalBtnBar(),
-                      ),
                     ],
                   ),
                   hawalTitle(post!),
