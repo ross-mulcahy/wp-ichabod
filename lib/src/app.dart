@@ -34,7 +34,7 @@ class HawalnirHomeState extends State<HawalnirHome>
       body: Stack(fit: StackFit.expand, children: [
         Container(
           child: FutureBuilder<List<Post>>(
-            future: client.listPosts(page: 3, perPage: 4),
+            future: client.listPosts(page: 1, perPage: 10),
             builder: (context, snapshot) {
               if (snapshot.hasError) print(snapshot.error);
 
