@@ -14,12 +14,12 @@ import 'widgets/drawerMain.dart';
 WordpressClient client = new WordpressClient(_baseUrl, http.Client());
 final String _baseUrl = mainApiUrl;
 
-class HawalnirHome extends StatefulWidget {
+class IchabodHome extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() => HawalnirHomeState();
+  State<StatefulWidget> createState() => IchabodHomeState();
 }
 
-class HawalnirHomeState extends State<HawalnirHome>
+class IchabodHomeState extends State<IchabodHome>
     with TickerProviderStateMixin {
   var scrollCont =
       ScrollController(initialScrollOffset: 0.0, keepScrollOffset: true);

@@ -65,10 +65,6 @@ class _DrawerMainState extends State<DrawerMain> {
                                         leading: Text(
                                           _categories[index].id.toString(),
                                         ),
-                                        trailing: Container(
-                                            width: 80,
-                                            child:
-                                                Text(_categories[index].slug!)),
                                       ),
                                     );
                                   },
@@ -79,84 +75,6 @@ class _DrawerMainState extends State<DrawerMain> {
                         ),
                       ],
                     ),
-                  ),
-                ),
-                Expanded(
-                  child: Column(
-                    children: <Widget>[
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: <Widget>[
-                          Expanded(
-                            child: Container(
-                              alignment: Alignment.center,
-                              color: Colors.black45,
-                              child: Text('Images '),
-                            ),
-                          ),
-                        ],
-                      ),
-                      Expanded(
-                        child: Container(
-                          padding: EdgeInsets.all(5),
-                          color: Colors.transparent,
-                          child: FutureBuilder<List<Media>>(
-                            future: client.listMedia(),
-                            builder: (context, snapshot) {
-                              if (!snapshot.hasData) {
-                                return LinearProgressIndicator();
-                              } else {
-                                return GridView.builder(
-                                  gridDelegate:
-                                      SliverGridDelegateWithFixedCrossAxisCount(
-                                          crossAxisCount: 2),
-                                  itemCount: snapshot.data!.length,
-                                  itemBuilder: (context, index) {
-                                    List<Media> _medias = snapshot.data!;
-                                    return Container(
-                                      margin: EdgeInsets.only(top: 4),
-                                      height: 60,
-                                      child: Container(
-                                        padding: EdgeInsets.all(5),
-                                        child: ClipRRect(
-                                          borderRadius:
-                                              BorderRadius.circular(10),
-                                          child: Image.network(
-                                            _medias[index].sourceURL!,
-                                            loadingBuilder:
-                                                (BuildContext context,
-                                                    Widget child,
-                                                    ImageChunkEvent?
-                                                        loadingProgress) {
-                                              if (loadingProgress == null)
-                                                return child;
-                                              return Center(
-                                                child: LinearProgressIndicator(
-                                                  value: loadingProgress
-                                                              .expectedTotalBytes !=
-                                                          null
-                                                      ? loadingProgress
-                                                              .cumulativeBytesLoaded /
-                                                          loadingProgress
-                                                              .expectedTotalBytes!
-                                                      : null,
-                                                ),
-                                              );
-                                            },
-                                            fit: BoxFit.cover,
-                                          ),
-                                        ),
-                                      ),
-                                    );
-                                  },
-                                );
-                              }
-                            },
-                          ),
-                        ),
-                      ),
-                    ],
                   ),
                 ),
               ],

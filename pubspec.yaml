@@ -1,4 +1,4 @@
-name: hawalnir1
+name: Ichabod
 description: Flutter Wordpress Client.
 
 # The following defines the version and build number for your application.
@@ -63,13 +63,12 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: NotoKufiArabic
+    - family: SF-Pro
       fonts:
-        - asset: lib/src/fonts/NotoKufiArabic-Regular.ttf
-    - family: NotoSansArabic
+        - asset: lib/src/fonts/SF-Pro.ttf
+    - family: SF-Pro-Italic
       fonts:
-        - asset: lib/src/fonts/NotoSansArabic-Regular.ttf
-          weight: 700
+        - asset: lib/src/fonts/SF-Pro-Italic.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.io/custom-fonts/#from-packages

@@ -87,7 +87,7 @@ class HawalnirPost extends StatelessWidget {
 
   Widget authorEmbedded(Post post) {
     return Text(
-      "author: " + post.author!,
+      "Author: " + post.author!,
       textAlign: TextAlign.right,
     );
   }

@@ -24,7 +24,7 @@ void main() {
         tabBarTheme: TabBarTheme(),
         iconTheme: IconThemeData(),
       ),
-      home: HawalnirHome(),
+      home: IchabodHome(),
       initialRoute: '/',
       routes: <String, WidgetBuilder>{},
     ),
