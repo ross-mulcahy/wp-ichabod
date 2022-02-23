@@ -1,5 +1,4 @@
 // change this to your website address
-//for example change it to : "http://www.wordpress.com"
 final String urWebsiteUrl = "https://mulcahyross-showme.go-vip.net/publisher";
 
 //Show how many per_page ?
