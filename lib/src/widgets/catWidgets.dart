@@ -137,9 +137,6 @@ Widget connectionErrorBar() {
   );
 }
 
-// This is the type used by the popup menu below.
-enum WhyFarther { harder, smarter, selfStarter, tradingCharter }
-
 sliverListGlobal(List<Post> posts) {
   debugPrint('SliverListGlobal recived ' + posts.length.toString());
   return SliverList(

@@ -110,45 +110,6 @@ Widget drawerBtn(String text, Function function) {
       ]);
 }
 
-//btn social
-Widget socialBtn(String text, IconData iconData, Color color) {
-  return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: <Widget>[
-        // Padding(
-        // padding: EdgeInsets.all(20.0),
-        //),
-        RaisedButton(
-          child: Row(
-            children: <Widget>[
-              Icon(
-                iconData,
-                color: Colors.cyan,
-              ),
-              Padding(padding: EdgeInsets.all(10.0)),
-              Text(
-                text,
-                style: TextStyle(color: Colors.white),
-              )
-            ],
-          ),
-          elevation: 2.0,
-          //textTheme: ButtonTextTheme.primary,
-          splashColor: Colors.cyan,
-          textColor: Colors.black,
-          colorBrightness: Brightness.dark,
-          padding: EdgeInsets.all(20.0),
-
-          animationDuration: Duration(microseconds: 200),
-          shape: RoundedRectangleBorder(
-              borderRadius:
-                  BorderRadius.only(bottomLeft: Radius.circular(10.0))),
-          color: color,
-          onPressed: () {},
-        ),
-      ]);
-}
-
 Widget drawerBtnPadding() {
   return Padding(
     padding: EdgeInsets.all(5.0),

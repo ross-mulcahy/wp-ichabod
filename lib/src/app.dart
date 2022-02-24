@@ -47,30 +47,4 @@ class IchabodHomeState extends State<IchabodHome>
       ]),
     );
   }
-
-  bottomNavAppBar() {
-    return ClipRect(
-      child: Container(
-        height: 80,
-        child: Stack(
-          children: <Widget>[
-            BackdropFilter(
-              filter: ImageFilter.blur(sigmaX: 2, sigmaY: 2),
-              child: BottomNavigationBar(
-                  backgroundColor: Colors.transparent,
-                  elevation: 0,
-                  items: [
-                    BottomNavigationBarItem(
-                        label: 'Home', icon: Icon(Icons.home)),
-                    BottomNavigationBarItem(
-                        label: 'Favorites', icon: Icon(Icons.favorite)),
-                    BottomNavigationBarItem(
-                        label: 'gallery', icon: Icon(Icons.image)),
-                  ]),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
 }
