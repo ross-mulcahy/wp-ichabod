@@ -4,7 +4,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
 import 'package:flutter_html/style.dart';
-import 'package:hawalnir1/src/widgets/posts_card.dart';
+import 'package:ichabod/src/widgets/posts_card.dart';
 
 import '../../wordpress_client.dart';
 import '../config.dart';

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart'; // pub to load html tags from json api
 import 'package:flutter_html/style.dart';
-import 'package:hawalnir1/wordpress_client.dart';
+import 'package:ichabod/wordpress_client.dart';
 
 import 'catWidgets.dart';
 import 'hawalnir-date-convertor.dart';

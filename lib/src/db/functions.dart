@@ -4,7 +4,7 @@ import 'dart:async';
 import '../config.dart';
 import '../db/database_helper.dart';
 import 'dart:io';
-import 'package:hawalnir1/wordpress_client.dart';
+import 'package:ichabod/wordpress_client.dart';
 
 WordpressClient client = new WordpressClient(_baseUrl, http.Client());
 final String _baseUrl = mainApiUrl;

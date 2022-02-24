@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hawalnir1/src/app.dart';
-import 'package:hawalnir1/src/models/category.dart';
+import 'package:ichabod/src/app.dart';
+import 'package:ichabod/src/models/category.dart';
 
 import '../../wordpress_client.dart';
 

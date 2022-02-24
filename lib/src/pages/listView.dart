@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hawalnir1/src/widgets/sliver_app_bar.dart';
+import 'package:ichabod/src/widgets/sliver_app_bar.dart';
 import '../../src/db/database_helper.dart';
 import '../../src/db/functions.dart';
 import '../../src/widgets/catWidgets.dart';

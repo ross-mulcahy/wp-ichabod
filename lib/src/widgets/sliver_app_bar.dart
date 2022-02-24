@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:hawalnir1/src/view_models/app_key.dart';
+import 'package:ichabod/src/view_models/app_key.dart';
 import 'package:provider/provider.dart' as provider;
 
 import '../pages/listView.dart';
@@ -26,7 +26,7 @@ class SliverAppBarCustomized extends StatelessWidget {
       flexibleSpace: Stack(
         children: <Widget>[
           Container(
-            color: Colors.deepPurple.withOpacity(0.7),
+            color: Colors.amber.withOpacity(0.7),
           ),
           FlexibleSpaceBar(
             collapseMode: CollapseMode.pin,
@@ -34,7 +34,7 @@ class SliverAppBarCustomized extends StatelessWidget {
               child: BackdropFilter(
                 filter: ImageFilter.blur(sigmaY: 5, sigmaX: 5),
                 child: Text(
-                  'Flutter-Wordpress-Client',
+                  'WPVIP Ichabod',
                   style: TextStyle(fontSize: 16),
                 ),
               ),
