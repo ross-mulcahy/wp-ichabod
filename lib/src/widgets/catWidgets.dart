@@ -1,9 +1,6 @@
-import 'dart:ui';
-
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
-import 'package:flutter_html/style.dart';
 import 'package:ichabod/src/widgets/posts_card.dart';
 
 import '../../wordpress_client.dart';
@@ -81,8 +78,8 @@ Widget hawalTitle(Post post) {
 
 Widget hawalAuthor(Post post) {
   return Text(
-    "Author: " + post.author!,
-    textAlign: TextAlign.right,
+    "by " + post.author!,
+    textAlign: TextAlign.left,
   );
 }
 

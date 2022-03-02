@@ -90,22 +90,22 @@ Widget drawerBtn(String text, Function function) {
   return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
-        RaisedButton(
-          elevation: 2.0,
-          //textTheme: ButtonTextTheme.primary,
-          splashColor: Colors.cyan,
-          textColor: Colors.black,
-          colorBrightness: Brightness.dark,
-
-          child: Text(text),
-
-          padding: EdgeInsets.all(20.0),
-          animationDuration: Duration(microseconds: 200),
-          shape: RoundedRectangleBorder(
-              borderRadius:
-                  BorderRadius.only(bottomLeft: Radius.circular(10.0))),
-          color: Colors.amber,
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            elevation: 2.0,
+            //textTheme: ButtonTextTheme.primary,
+            // splashColor: Colors.cyan,
+            // textColor: Colors.black,
+            // colorBrightness: Brightness.dark,
+            padding: EdgeInsets.all(20.0),
+            animationDuration: Duration(microseconds: 200),
+            shape: RoundedRectangleBorder(
+                borderRadius:
+                    BorderRadius.only(bottomLeft: Radius.circular(10.0))),
+            primary: Colors.amber,
+          ),
           onPressed: function as void Function()?,
+          child: Text(text),
         ),
       ]);
 }

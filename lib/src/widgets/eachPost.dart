@@ -33,14 +33,11 @@ class IchabodPost extends StatelessWidget {
                   ),
                   hawalTitle(post!),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
-                      Expanded(
-                        child: hawalAuthor(post!),
-                      ),
-                      Expanded(
-                        child: hawalDate(post!),
-                      ),
-                    ],
+                      hawalAuthor(post!),
+                      hawalDate(post!),
+                    ]
                   ),
                   Divider(),
                   contentRendered(post!),
@@ -77,13 +74,6 @@ class IchabodPost extends StatelessWidget {
         "div": Style(fontSize: FontSize(20)),
       },
       shrinkWrap: true,
-    );
-  }
-
-  Widget authorEmbedded(Post post) {
-    return Text(
-      "Author: " + post.author!,
-      textAlign: TextAlign.right,
     );
   }
 
