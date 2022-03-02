@@ -35,7 +35,7 @@ class _PostsCardState extends State<PostsCard> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => HawalnirPost(post: widget.post),
+                    builder: (context) => IchabodPost(post: widget.post),
                   ),
                 );
               },

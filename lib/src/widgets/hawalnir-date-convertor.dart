@@ -6,15 +6,12 @@ dynamic dateConvertor(String value) {
    //value= "hello";
   String convertedValue;
    
-
-     
     convertedValue = 
-    DateFormat('y/M/d   H:m')
+    DateFormat('D MMMM')
      .format(DateTime.parse(value));
    
    return  convertedValue;
-     
-    
+
 }
    
     //if (!value.contains('@')) {

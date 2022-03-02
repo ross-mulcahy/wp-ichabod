@@ -114,6 +114,7 @@ class Post {
     title = map['title']['rendered'];
     content = map['content']['rendered'];
 //    author = map['author'];
+    author = map["_embedded"]["author"][0]["name"];
     //excerpt = map['excerpt'];
     //featuredMediaID = map['featured_media'];
     //featuredMediaUrl = map ['_links']["self"][0]['href'] ;

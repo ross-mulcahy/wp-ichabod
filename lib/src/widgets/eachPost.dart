@@ -6,13 +6,13 @@ import 'package:ichabod/wordpress_client.dart';
 import 'catWidgets.dart';
 import 'hawalnir-date-convertor.dart';
 
-class HawalnirPost extends StatelessWidget {
-  HawalnirPost({Key? key, required var this.post}) : super(key: key);
+class IchabodPost extends StatelessWidget {
+  IchabodPost({Key? key, required var this.post}) : super(key: key);
   final Post? post;
 
   @override
   Widget build(BuildContext context) {
-    debugPrint(post!.id.toString());
+    debugPrint("ID" + post!.id.toString());
 
     return new Scaffold(
       appBar: new AppBar(
