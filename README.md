@@ -1,8 +1,10 @@
-# A Wordpress client for Flutter 
+# A WordPress client for Flutter 
 
 For help getting started with Flutter, view Flutter online [documentation](https://flutter.io/).
 
 To configure to build iOS apps follow instructions [here](https://docs.flutter.dev/deployment/ios).
+
+## Steps
 
 Clone repository.
 
