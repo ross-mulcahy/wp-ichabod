@@ -3,8 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:ichabod/src/models/post.dart';
 
-import '../pages/listView.dart';
-import 'catWidgets.dart';
+import 'package:ichabod/src/widgets/catWidgets.dart';
 import 'eachPost.dart';
 
 class PostsCard extends StatefulWidget {

@@ -1,6 +1,5 @@
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' show ChangeNotifier, GlobalKey, ScaffoldState;
 
 class Keys with ChangeNotifier {
   final GlobalKey<ScaffoldState> appScaffoldKey = GlobalKey<ScaffoldState>();

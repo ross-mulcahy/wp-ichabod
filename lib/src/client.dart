@@ -218,6 +218,32 @@ class WordpressClient {
     return p;
   }
 
+  /// Get podcast
+  Future<Post?> getPodcast(int? postID, {bool injectObjects: true}) async {
+    if (postID == null) {
+      return null;
+    }
+
+    String _endpoint = '/wp/v2/posts/$postID?_embed';
+
+    // Retrieve the data
+    Map? postMap = await (_get(_endpoint) as FutureOr<Map<dynamic, dynamic>?>);
+    if (postMap == null) {
+      return null;
+    }
+
+    Post p = new Post.fromMap(postMap as Map<String, dynamic>);
+
+    // Inject objects if requested
+//    if (injectObjects) {
+//      if (p.featuredMediaID != null && p.featuredMediaID > 0) {
+//        p.featuredMedia = await getMedia(p.featuredMediaID);
+//      }
+//    }
+
+    return p;
+  }
+
   /// Get media item
   Future<Media?> getMedia(int? mediaID) async {
     if (mediaID == null) {
