@@ -112,7 +112,10 @@ class Post {
     //type = map['type'];
     //password = map['password'];
     title = map['title']['rendered'];
+
+
     content = map['content']['rendered'];
+
 //    author = map['author'];
     author = map["_embedded"]["author"][0]["name"];
     //excerpt = map['excerpt'];

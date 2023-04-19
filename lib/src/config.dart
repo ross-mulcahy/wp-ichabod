@@ -1,5 +1,5 @@
 // change this to your website address
-final String urWebsiteUrl = "https://mulcahyross-showme.go-vip.net/publisher";
+final String urWebsiteUrl = "https://soleng.go-vip.net/";
 
 //Show how many per_page ?
 final String perPage = "10";

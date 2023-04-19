@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart'; // pub to load html tags from json api
 import 'package:flutter_html/style.dart';
 import 'package:ichabod/wordpress_client.dart';
+import 'package:html/parser.dart' as html_parser;
+import 'dart:convert';
+import 'dart:developer';
 
 import 'catWidgets.dart';
 import 'hawalnir-date-convertor.dart';
@@ -68,10 +71,32 @@ class IchabodPost extends StatelessWidget {
   }
 
   Widget contentRendered(Post post) {
+    final document = html_parser.parse(post.content);
+  
+    // Find all the p tags in the document
+    final pTags = document.querySelectorAll('p');
+    
+    // Create an empty string to store the combined p tags
+    String combinedPTags = '';
+    
+    // Loop through the p tags
+    for (final pTag in pTags) {
+      // Add the p tag to the combined p tags string
+      combinedPTags += pTag.text + "<br />";
+    }
+
+    
     return Html(
-      data: (post.content).toString(),
+      data: (combinedPTags).toString(),
       style: {
-        "div": Style(fontSize: FontSize(20)),
+        "div": Style(
+          fontSize: FontSize(20),
+          margin: const EdgeInsets.only(bottom: 10) 
+        ),
+        "p": Style(
+          fontSize: FontSize(20), 
+          margin: const EdgeInsets.only(bottom: 10)  
+        ),
       },
       shrinkWrap: true,
     );
